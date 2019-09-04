@@ -134,7 +134,8 @@ const createComponent = content => {
 
   const span = document.createElement("span");
   span.classList.add("expandButton");
-  span.textContent = "Expand";
+  span.textContent = "ReadMore";
+  //addevent listener
   span.addEventListener("click", event => {
     event.preventDefault();
     div.classList.toggle("article-open");
